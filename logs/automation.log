@@ -1,0 +1,340 @@
+12:55:14.672 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using Log4J2 as the default logging framework
+12:55:14.776 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+12:55:14.776 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+12:55:14.789 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@22680f52
+12:55:14.868 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+12:55:14.869 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 17
+12:55:14.871 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+12:55:14.873 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+12:55:14.874 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+12:55:14.875 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+12:55:14.876 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:282) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) ~[async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:94) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:47) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:135) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:116) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:88) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:40) ~[selenium-chromium-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:101) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at stepDefinitions.Steps.user_launch_browser(Steps.java:63) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-7.12.0.jar:7.12.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-7.12.0.jar:7.12.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.12.0.jar:7.12.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.SliceOps$1$1.accept(SliceOps.java:200) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163) [cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146) [cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78) [cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.cli.Main.run(Main.java:87) [cucumber-core-7.12.0.jar:7.12.0]
+	at cucumber.api.cli.Main.run(Main.java:30) [cucumber-core-7.12.0.jar:7.12.0]
+	at cucumber.api.cli.Main.main(Main.java:15) [cucumber-core-7.12.0.jar:7.12.0]
+12:55:14.901 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+12:55:14.904 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @19bb089b
+	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:560) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0$7.run(PlatformDependent0.java:410) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:401) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:333) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:88) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:114) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:251) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:224) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at io.netty.util.HashedWheelTimer.<init>(HashedWheelTimer.java:203) ~[netty-common-4.1.91.Final.jar:4.1.91.Final]
+	at org.asynchttpclient.DefaultAsyncHttpClient.newNettyTimer(DefaultAsyncHttpClient.java:111) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.DefaultAsyncHttpClient.<init>(DefaultAsyncHttpClient.java:90) ~[async-http-client-2.12.3.jar:?]
+	at org.asynchttpclient.Dsl.asyncHttpClient(Dsl.java:32) ~[async-http-client-2.12.3.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.createHttpClient(NettyClient.java:94) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient.<clinit>(NettyClient.java:47) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.http.netty.NettyClient$Factory.createClient(NettyClient.java:135) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:116) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.<init>(HttpCommandExecutor.java:94) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.<init>(DriverCommandExecutor.java:88) ~[selenium-remote-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chromium.ChromiumDriverCommandExecutor.<init>(ChromiumDriverCommandExecutor.java:40) ~[selenium-chromium-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver$ChromeDriverCommandExecutor.<init>(ChromeDriver.java:111) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:101) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:84) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:52) ~[selenium-chrome-driver-4.9.1.jar:?]
+	at stepDefinitions.Steps.user_launch_browser(Steps.java:63) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66) ~[cucumber-java-7.12.0.jar:7.12.0]
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24) ~[cucumber-java-7.12.0.jar:7.12.0]
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47) ~[cucumber-java-7.12.0.jar:7.12.0]
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29) ~[cucumber-java-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$6(Runtime.java:107) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.Runtime.lambda$executePickle$7(Runtime.java:107) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at io.cucumber.core.runtime.Runtime$SameThreadExecutorService.execute(Runtime.java:235) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.lambda$runFeatures$3(Runtime.java:89) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.SliceOps$1$1.accept(SliceOps.java:200) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1602) ~[?:?]
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?]
+	at io.cucumber.core.runtime.Runtime.runFeatures(Runtime.java:90) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.Runtime.lambda$run$0(Runtime.java:78) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148) ~[cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163) [cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146) [cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.runtime.Runtime.run(Runtime.java:78) [cucumber-core-7.12.0.jar:7.12.0]
+	at io.cucumber.core.cli.Main.run(Main.java:87) [cucumber-core-7.12.0.jar:7.12.0]
+	at cucumber.api.cli.Main.run(Main.java:30) [cucumber-core-7.12.0.jar:7.12.0]
+	at cucumber.api.cli.Main.main(Main.java:15) [cucumber-core-7.12.0.jar:7.12.0]
+12:55:14.908 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+12:55:14.909 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+12:55:14.910 [main] DEBUG io.netty.util.internal.PlatformDependent - maxDirectMemory: 2124414976 bytes (maybe)
+12:55:14.910 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\hp5cg\AppData\Local\Temp (java.io.tmpdir)
+12:55:14.910 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+12:55:14.911 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+12:55:14.913 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+12:55:14.913 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+12:55:14.916 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+12:55:14.916 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+12:55:14.935 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+12:55:14.980 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+12:55:14.981 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+12:55:15.216 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+12:55:15.217 [main] DEBUG io.netty.handler.ssl.JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+12:55:15.239 [main] DEBUG io.netty.util.concurrent.GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+12:55:15.262 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+12:55:15.277 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+12:55:15.278 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+12:55:15.352 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@21719a0
+12:55:15.356 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@304a3655
+12:55:15.358 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@368d5c00
+12:55:15.360 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@12a160c2
+12:55:15.362 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@aa10649
+12:55:15.365 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6b3871d6
+12:55:15.367 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@37095ded
+12:55:15.369 [main] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2eb79cbe
+12:55:15.421 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+12:55:15.421 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+12:55:15.421 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+12:55:15.421 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+12:55:15.421 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+12:55:15.422 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+12:55:15.422 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+12:55:15.422 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+12:55:15.422 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+12:55:15.423 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+12:55:15.423 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+12:55:15.423 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+12:55:15.443 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+12:55:15.443 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+12:55:15.443 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+12:55:17.131 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 5676 (auto-detected)
+12:55:17.135 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+12:55:17.135 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+12:55:17.153 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+12:55:17.155 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+12:55:17.190 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 3c:95:09:ff:fe:55:6e:9b (auto-detected)
+12:55:17.267 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+12:55:17.267 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+12:55:17.267 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@38e2c888
+12:55:17.312 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+12:55:17.312 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+12:55:17.312 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+12:55:17.312 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.blocking: false
+12:55:17.313 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+12:55:18.847 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+12:55:19.077 [main] DEBUG io.netty.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xfa1c95f6b11111e9
+12:55:25.734 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:55:27.109 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:55:27.333 [main] INFO  stepDefinitions.Steps - Provided email
+12:55:27.470 [main] INFO  stepDefinitions.Steps - Provide password
+12:55:28.721 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+12:55:28.807 [main] INFO  stepDefinitions.Steps - LoginSuccess
+12:55:28.825 [AsyncHttpClient-1-4] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+12:56:25.202 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:56:25.895 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:56:26.125 [main] INFO  stepDefinitions.Steps - Provided email
+12:56:26.262 [main] INFO  stepDefinitions.Steps - Provide password
+12:56:27.185 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+12:56:27.258 [main] INFO  stepDefinitions.Steps - LoginSuccess
+14:35:17.133 [main] INFO  stepDefinitions.Steps - Clicked on Login
+14:35:18.795 [main] INFO  stepDefinitions.Steps - Clicked on Login
+14:35:19.017 [main] INFO  stepDefinitions.Steps - Provided email
+14:35:19.219 [main] INFO  stepDefinitions.Steps - Provide password
+14:35:20.811 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+14:35:20.920 [main] INFO  stepDefinitions.Steps - LoginSuccess
+14:39:45.691 [main] INFO  stepDefinitions.Steps - Clicked on Login
+14:39:46.805 [main] INFO  stepDefinitions.Steps - Clicked on Login
+14:39:47.026 [main] INFO  stepDefinitions.Steps - Provided email
+14:39:47.148 [main] INFO  stepDefinitions.Steps - Provide password
+14:39:47.945 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+14:39:48.020 [main] INFO  stepDefinitions.Steps - LoginSuccess
+14:49:51.809 [main] INFO  stepDefinitions.Steps - Clicked on Login
+14:49:52.473 [main] INFO  stepDefinitions.Steps - Clicked on Login
+14:49:52.687 [main] INFO  stepDefinitions.Steps - Provided email
+14:49:52.857 [main] INFO  stepDefinitions.Steps - Provide password
+14:49:53.654 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+14:50:03.832 [main] INFO  stepDefinitions.Steps - Login failed
+11:08:32.562 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:08:33.709 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:08:33.895 [main] INFO  stepDefinitions.Steps - Provided email
+11:08:34.034 [main] INFO  stepDefinitions.Steps - Provide password
+11:08:36.484 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+11:08:36.596 [main] INFO  stepDefinitions.Steps - LoginSuccess
+11:08:41.766 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:08:42.502 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:08:42.713 [main] INFO  stepDefinitions.Steps - Provided email
+11:08:42.852 [main] INFO  stepDefinitions.Steps - Provide password
+11:08:43.576 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+11:08:53.648 [main] INFO  stepDefinitions.Steps - Login failed
+11:11:02.452 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:11:03.027 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:11:03.229 [main] INFO  stepDefinitions.Steps - Provided email
+11:11:03.367 [main] INFO  stepDefinitions.Steps - Provide password
+11:11:04.583 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+11:11:04.663 [main] INFO  stepDefinitions.Steps - LoginSuccess
+11:11:44.800 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:11:45.749 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:11:45.953 [main] INFO  stepDefinitions.Steps - Provided email
+11:11:46.086 [main] INFO  stepDefinitions.Steps - Provide password
+11:11:47.041 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+11:11:47.119 [main] INFO  stepDefinitions.Steps - LoginSuccess
+11:11:52.478 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:11:53.120 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:11:53.328 [main] INFO  stepDefinitions.Steps - Provided email
+11:11:53.461 [main] INFO  stepDefinitions.Steps - Provide password
+11:11:54.134 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+11:12:04.209 [main] INFO  stepDefinitions.Steps - Login failed
+11:56:37.983 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:56:38.713 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:56:55.155 [main] INFO  stepDefinitions.Steps - Clicked on Login
+11:56:56.169 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:11:29.771 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:11:30.493 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:11:37.112 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:11:38.175 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:11:43.809 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:11:44.697 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:16:14.233 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:16:14.912 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:16:21.439 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:16:22.160 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:16:27.755 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:16:28.452 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:17:44.115 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:17:45.075 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:18:04.094 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:18:05.092 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:22:28.454 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:22:30.106 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:22:41.021 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:22:41.881 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:22:58.014 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:22:58.835 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:40:36.830 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:40:37.782 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:40:37.987 [main] INFO  stepDefinitions.Steps - Provided email
+12:40:38.139 [main] INFO  stepDefinitions.Steps - Provide password
+12:40:39.034 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+12:40:49.109 [main] INFO  stepDefinitions.Steps - Login failed
+12:42:17.326 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:42:18.249 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:42:18.436 [main] INFO  stepDefinitions.Steps - Provided email
+12:42:18.574 [main] INFO  stepDefinitions.Steps - Provide password
+12:42:19.171 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+12:42:29.252 [main] INFO  stepDefinitions.Steps - Login failed
+12:57:31.120 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:57:32.407 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:57:32.619 [main] INFO  stepDefinitions.Steps - Provided email
+12:57:32.788 [main] INFO  stepDefinitions.Steps - Provide password
+12:57:33.710 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+12:57:43.769 [main] INFO  stepDefinitions.Steps - Login failed
+12:58:31.645 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:58:32.312 [main] INFO  stepDefinitions.Steps - Clicked on Login
+12:58:32.497 [main] INFO  stepDefinitions.Steps - Provided email
+12:58:32.630 [main] INFO  stepDefinitions.Steps - Provide password
+12:58:33.826 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+12:58:33.911 [main] INFO  stepDefinitions.Steps - LoginSuccess
+15:15:13.205 [main] INFO  stepDefinitions.Steps - Clicked on Login
+15:15:15.368 [main] INFO  stepDefinitions.Steps - Clicked on Login
+15:15:15.611 [main] INFO  stepDefinitions.Steps - Provided email
+15:15:15.742 [main] INFO  stepDefinitions.Steps - Provide password
+15:15:18.233 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+15:15:18.315 [main] INFO  stepDefinitions.Steps - LoginSuccess
+15:16:17.714 [main] INFO  stepDefinitions.Steps - Clicked on Login
+15:16:18.558 [main] INFO  stepDefinitions.Steps - Clicked on Login
+15:16:18.757 [main] INFO  stepDefinitions.Steps - Provided email
+15:16:18.894 [main] INFO  stepDefinitions.Steps - Provide password
+15:16:19.787 [main] INFO  stepDefinitions.Steps - Clicked on Login Button
+15:16:19.869 [main] INFO  stepDefinitions.Steps - LoginSuccess
